@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "preview": "npx --yes firebase-tools@latest emulators:start --only hosting",
-    "deploy": "npx --yes firebase-tools@latest deploy --only hosting"
+    "deploy": "npx --yes firebase-tools@latest deploy --only hosting,firestore:rules",
+    "deploy:hosting": "npx --yes firebase-tools@latest deploy --only hosting"
   }
 }

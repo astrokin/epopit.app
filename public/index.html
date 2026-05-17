@@ -188,6 +188,43 @@
       </div>
     </section>
 
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <span class="eyebrow">Contact us</span>
+        <h2 id="contact-title">Let us know<br>what you need</h2>
+        <p>Send a support request, partnership note, or product question.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" data-contact-form>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" maxlength="100" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" maxlength="254" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" maxlength="2000" required></textarea>
+          </label>
+          <label class="contact-honeypot" aria-hidden="true">
+            <span>Company</span>
+            <input type="text" name="company" tabindex="-1" autocomplete="off">
+          </label>
+          <button class="contact-submit" type="submit" data-contact-submit>Send message</button>
+          <p class="contact-status" data-contact-status role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="email-panel">
+          <span class="eyebrow">Email us</span>
+          <h3>epopitapp@gmail.com</h3>
+          <a class="email-button" href="mailto:epopitapp@gmail.com">Email us</a>
+        </div>
+      </div>
+    </section>
+
     <section class="cta" aria-labelledby="download-title">
       <img class="cta-toy-left" src="/assets/images/toy-blue-bottom.png" alt="">
       <img class="cta-toy-right" src="/assets/images/toy-orange-bottom.png" alt="">
@@ -212,10 +249,12 @@
       </a>
     </nav>
     <nav class="footer-links" aria-label="Legal links">
+      <a href="mailto:epopitapp@gmail.com">Email Us</a>
       <a href="/terms-of-use">Terms fo Use</a>
       <a href="/privacy-policy">Privacy Policy</a>
     </nav>
   </footer>
   <script type="module" src="/firebase-init.js"></script>
+  <script type="module" src="/contact.js"></script>
 </body>
 </html>
