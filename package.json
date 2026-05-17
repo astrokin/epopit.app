@@ -1,0 +1,9 @@
+{
+  "name": "epopit-app-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preview": "npx --yes firebase-tools@latest emulators:start --only hosting",
+    "deploy": "npx --yes firebase-tools@latest deploy --only hosting"
+  }
+}
