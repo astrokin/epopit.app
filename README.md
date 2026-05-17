@@ -10,11 +10,7 @@ npm run preview
 
 ## Manual deploy
 
-Select your Firebase project once:
-
-```sh
-npx --yes firebase-tools@latest use --add
-```
+The default Firebase project is configured in `.firebaserc` as `electro-pop-it`.
 
 Deploy manually from this directory:
 
@@ -25,7 +21,7 @@ npm run deploy
 You can also pass a project id explicitly:
 
 ```sh
-npx --yes firebase-tools@latest deploy --only hosting --project <project-id>
+npx --yes firebase-tools@latest deploy --only hosting --project electro-pop-it
 ```
 
 No CI/CD is configured.
